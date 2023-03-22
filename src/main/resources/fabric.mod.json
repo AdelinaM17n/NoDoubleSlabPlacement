@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "nodoubleslab",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "No Double Slab Placement",
+  "description": "Prevents the player from placing a slab-block in a place where it could form into a double slab block",
   "authors": [
     "Maheesha"
   ],
@@ -13,22 +13,22 @@
     "sources": "https://github.com/MaheEvil/Fabric-Example-Mod-Parchment-QF"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPL-3.0",
+  "icon": "assets/nodoubleslab/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.maheevil.example.ExampleMod"
+      "io.github.maheevil.nodoubleslab.NoDoubleSlabPlacementMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "nodoubleslab.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.12.9",
-    "minecraft": "1.19.4",
+    "minecraft": "1.19.x",
     "java": ">=17"
   },
   "suggests": {

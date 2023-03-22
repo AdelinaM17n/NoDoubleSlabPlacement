@@ -1,12 +1,15 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "io.github.maheevil.example.mixin",
+  "package": "io.github.maheevil.nodoubleslab.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "MinecraftMixin"
   ],
   "client": [
-    "ExampleMixin"
+    "KeyMappingMixin",
+    "MultiPlayerGameModeMixin",
+    "OptionsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
