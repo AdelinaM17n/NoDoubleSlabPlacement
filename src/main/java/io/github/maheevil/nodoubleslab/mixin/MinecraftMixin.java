@@ -1,5 +1,6 @@
 package io.github.maheevil.nodoubleslab.mixin;
 
+import io.github.maheevil.nodoubleslab.IOptionGetter;
 import io.github.maheevil.nodoubleslab.NoDoubleSlabPlacementMod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;

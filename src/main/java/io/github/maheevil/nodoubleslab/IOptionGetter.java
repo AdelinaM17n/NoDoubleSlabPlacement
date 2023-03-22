@@ -1,4 +1,4 @@
-package io.github.maheevil.nodoubleslab.mixin;
+package io.github.maheevil.nodoubleslab;
 
 import net.minecraft.client.KeyMapping;
 

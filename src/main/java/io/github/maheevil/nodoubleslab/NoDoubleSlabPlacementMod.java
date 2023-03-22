@@ -14,6 +14,7 @@ public class NoDoubleSlabPlacementMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		System.out.println(configFile);
 		try{
 			loadFromFile();
 		}catch(IOException e){
@@ -23,11 +24,13 @@ public class NoDoubleSlabPlacementMod implements ModInitializer {
 
 	@SuppressWarnings("all")
 	private static void loadFromFile() throws IOException{
-		if(configFile.exists() && configFile.isFile() && configFile.canRead()){
+		if(!configFile.exists() && configFile.isFile() && configFile.canRead()){
 			Scanner reader = new Scanner(configFile);
 			placeDoubleSlabs = !reader.nextLine().equalsIgnoreCase("false");
 		}else {
 			placeDoubleSlabs = true;
+			var parentFile = configFile.getParentFile();
+			parentFile.mkdir();
 			configFile.createNewFile();
 		}
 		saveToFile();

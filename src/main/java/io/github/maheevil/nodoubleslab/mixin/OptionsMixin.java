@@ -1,5 +1,6 @@
 package io.github.maheevil.nodoubleslab.mixin;
 
+import io.github.maheevil.nodoubleslab.IOptionGetter;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Options;
 import org.apache.commons.lang3.ArrayUtils;
