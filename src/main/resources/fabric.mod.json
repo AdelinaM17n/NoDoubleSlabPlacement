@@ -6,7 +6,7 @@
   "name": "No Double Slab Placement",
   "description": "Prevents the player from placing a slab-block in a place where it could form into a double slab block",
   "authors": [
-    "Maheesha"
+    "Adelina"
   ],
   "contact": {
     "homepage": "https://github.com/MaheEvil/NoDoubleSlabPlacement",
@@ -28,7 +28,7 @@
 
   "depends": {
     "fabricloader": ">=0.12.9",
-    "minecraft": ">=1.20",
+    "minecraft": ">=1.20.2",
     "java": ">=17"
   },
   "suggests": {
